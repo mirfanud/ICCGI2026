@@ -269,6 +269,58 @@ jQuery(document).ready(init);
 })(window.jQuery)
 </script>
 
+
+
+
+<style>
+  .speaker-image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .speaker-image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 800px) {
+    .speaker-image-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .speaker-image-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="speaker-image-gallery">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/1_orig.png" alt="Conference image 1">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/2_orig.png" alt="Conference image 2">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/3_orig.png" alt="Conference image 3">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/4_orig.png" alt="Conference image 4">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/5_orig.png" alt="Conference image 5">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/6_orig.png" alt="Conference image 6">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/7_orig.png" alt="Conference image 7">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/8_orig.png" alt="Conference image 8">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/9_orig.png" alt="Conference image 9">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/10_orig.png" alt="Conference image 10">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/11_orig.png" alt="Conference image 11">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/12_orig.png" alt="Conference image 12">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/13_orig.png" alt="Conference image 13">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/14_orig.png" alt="Conference image 14">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/15_orig.png" alt="Conference image 15">
+  <img src="/ICCGI2026/uploads/1/1/9/2/119211987/16_orig.png" alt="Conference image 16">
+</div>
+
+
+
 <div style="height:20px;overflow:hidden"></div></div>
 
 <div class="wsite-spacer" style="height:100px;"></div>
