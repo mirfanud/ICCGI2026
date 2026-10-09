@@ -269,6 +269,41 @@ jQuery(document).ready(init);
 })(window.jQuery)
 </script>
 
+	<script>
+(function () {
+  function fixSlideshowImages() {
+    var container = document.getElementById(
+      "786474676838743860-slideshow"
+    );
+
+    if (!container) return;
+
+    container.querySelectorAll("img").forEach(function (img) {
+      var src = img.getAttribute("src");
+
+      if (
+        src &&
+        src.startsWith("/uploads/") &&
+        !src.startsWith("/ICCGI2026/")
+      ) {
+        var corrected = "/ICCGI2026" + src;
+
+        if (src !== corrected) {
+          img.setAttribute("src", corrected);
+        }
+      }
+    });
+  }
+
+  // Run after the slideshow renders.
+  window.addEventListener("load", function () {
+    setTimeout(fixSlideshowImages, 500);
+    setTimeout(fixSlideshowImages, 1500);
+    setTimeout(fixSlideshowImages, 3000);
+  });
+})();
+</script>
+
 <div style="height:20px;overflow:hidden"></div></div>
 
 <div class="wsite-spacer" style="height:100px;"></div>
